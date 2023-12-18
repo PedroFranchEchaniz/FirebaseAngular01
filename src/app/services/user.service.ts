@@ -6,7 +6,6 @@ import {
   getDocs,
   query,
 } from '@angular/fire/firestore';
-import { getDoc } from 'firebase/firestore';
 import { Observable, from } from 'rxjs';
 import { map } from 'rxjs/operators';
 

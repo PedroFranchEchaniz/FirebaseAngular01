@@ -13,10 +13,13 @@ import { environment } from '../environments/environment.development';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { UserNewComponent } from './components/user-new/user-new.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { NgModel } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    UserNewComponent
+    UserNewComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { UserNewComponent } from './components/user-new/user-new.component';
     FormsModule,
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
+    NgModel
 
   ],
   providers: [],
